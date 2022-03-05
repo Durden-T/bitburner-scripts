@@ -67,7 +67,7 @@ let verbose = false; // "-v" command line arg - Detailed logs about batch schedu
 let runOnce = false; // "-o" command line arg - Good for debugging, run the main targettomg loop once then stop
 let useHacknetNodes = false; // "-n" command line arg - Can toggle using hacknet nodes for extra hacking ram
 let loopingMode = false;
-let recoveryThreadPadding = 1; // How many multiples to increase the weaken/grow threads to recovery from misfires automatically (useful when RAM is abundant and timings are tight)
+let recoveryThreadPadding = 0.9; // How many multiples to increase the weaken/grow threads to recovery from misfires automatically (useful when RAM is abundant and timings are tight)
 
 // simple name array of servers that have been added
 let addedServerNames = [];
