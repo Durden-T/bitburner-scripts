@@ -220,7 +220,7 @@ export async function main(ns) {
     asynchronousHelpers = [
         { name: "stats.js", shouldRun: () => ns.getServerMaxRam("home") >= 64 /* Don't waste precious RAM */ }, // Adds stats not usually in the HUD
         { name: "hacknet-upgrade-manager.js", args: ["-c", "--max-payoff-time", "1h"] }, // Kickstart hash income by buying everything with up to 1h payoff time immediately
-        { name: "stockmaster.js", args: ["--show-market-summary"], tail: true, shouldRun: () => playerStats.hasTixApiAccess }, // Start our stockmaster if we have the required stockmarket access
+        { name: "stockmaster.js", tail: true, shouldRun: () => playerStats.hasTixApiAccess }, // Start our stockmaster if we have the required stockmarket access
         { name: "gangs.js", tail: true, shouldRun: () => 2 in dictSourceFiles }, // Script to create manage our gang for us
         { name: "spend-hacknet-hashes.js", args: ["-v"], shouldRun: () => 9 in dictSourceFiles }, // Always have this running to make sure hashes aren't wasted
         { name: "sleeve.js", tail: true, shouldRun: () => 10 in dictSourceFiles }, // Script to create manage our sleeves for us
