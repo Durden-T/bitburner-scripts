@@ -23,7 +23,7 @@ const factions = ["Illuminati", "Daedalus", "The Covenant", "ECorp", "MegaCorp",
 // These factions should ideally be completed in this order (TODO: Check for augmentation dependencies)
 const preferredEarlyFactionOrder = [
     "Slum Snakes", // Unlock Gangs
-    //"Netburners", // Required to set up hash income
+    // fixme: "Netburners", // Required to set up hash income
     "Tian Di Hui", "Aevum", // These give all the company_rep and faction_rep bonuses early game    
     "CyberSec", /* Quick, and NightSec aug depends on an aug from here */ "NiteSec", "Tetrads", // Cha augs to speed up earning company promotions
     "Bachman & Associates", // Boost company/faction rep for future augs
@@ -49,7 +49,8 @@ const preferredCompanyFactionOrder = [
     "Four Sigma", // No unique augs, but note that if accessible early on, Fulcrum + Four Sigma is a one-two punch to get all company rep boosting augs in just 2 factions
 ]
 // Order in which to focus on crime factions
-const preferredCrimeFactionOrder = ["Netburners", "Slum Snakes", "NiteSec", "Tetrads", "The Black Hand", "The Syndicate", "The Dark Army", "Speakers for the Dead", "Daedalus"]
+// fixme: const preferredCrimeFactionOrder = ["Netburners", "Slum Snakes", "NiteSec", "Tetrads", "The Black Hand", "The Syndicate", "The Dark Army", "Speakers for the Dead", "Daedalus"]
+const preferredCrimeFactionOrder = ["Slum Snakes", "NiteSec", "Tetrads", "The Black Hand", "The Syndicate", "The Dark Army", "Speakers for the Dead", "Daedalus"]
 
 const loopSleepInterval = 5000; // 5 seconds
 const statusUpdateInterval = 60000; // 1 minute (outside of this, minor updates in e.g. stats aren't logged)
