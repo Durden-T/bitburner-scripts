@@ -72,7 +72,7 @@ export async function main(ns) {
     for (let i = 0; i < argLen; i++) {
         let tempArg = ns.args[i];
         if (typeof tempArg == "number" && ns.args[i] > 0 && ns.args[i] < 32) {
-            tempStatus[tempArg - 1] = 1;
+            tempStatus[tempArg] = 1;
             modified = true;
         } else {
             break;
