@@ -22,8 +22,8 @@ const factions = ["Illuminati", "Daedalus", "The Covenant", "ECorp", "MegaCorp",
     "Volhaven", "Speakers for the Dead", "The Dark Army", "The Syndicate", "Silhouette", "Tetrads", "Slum Snakes", "Netburners", "Tian Di Hui", "CyberSec"]; //TODO: Add Bladeburner Automation at BN7.1
 // These factions should ideally be completed in this order (TODO: Check for augmentation dependencies)
 const preferredEarlyFactionOrder = [
-    //"Slum Snakes", // Unlock Gangs
-    "Netburners", // Required to set up hash income
+    "Slum Snakes", // Unlock Gangs
+    //"Netburners", // Required to set up hash income
     "Tian Di Hui", "Aevum", // These give all the company_rep and faction_rep bonuses early game    
     "CyberSec", /* Quick, and NightSec aug depends on an aug from here */ "NiteSec", "Tetrads", // Cha augs to speed up earning company promotions
     "Bachman & Associates", // Boost company/faction rep for future augs
