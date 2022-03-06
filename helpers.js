@@ -248,12 +248,11 @@ export async function autoRetry(ns, fnFunctionThatMayFail, fnSuccessCondition, e
         }
         catch (error) {
             const fatal = maxRetries === 0;
-            if fatal {
+            if (fatal) {
                 const errorLog = `${fatal ? 'FAIL' : 'WARN'}: (${maxRetries} retries remaining): ${String(error)}`
-                log(ns, errorLog, fatal, !verbose ? undefined : (fatal ? 'error' : 'warning'))
+                log(ns, errorLog, fatal, !verbose ? undefined : (fatal ? 'error' : 'warning'));
+                throw error;
             }
-            
-            if (fatal) throw error;
             await ns.sleep(retryDelayMs);
             retryDelayMs *= backoffRate;
         }
