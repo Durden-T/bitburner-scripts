@@ -1,4 +1,4 @@
-import * as comlink from "/libs/comlink";
+import * as comlink from "/cl/libs/comlink";
 import {
   BenchmarkType,
   CorporationOptimizer,
@@ -6,16 +6,16 @@ import {
   getComparator,
   getReferenceData,
   minStepForOfficeBenchmark
-} from "/corporationOptimizer";
-import { calculateEmployeeStats, formatNumber, ResearchName } from "/corporationFormulas";
+} from "/cl/corporationOptimizer";
+import { calculateEmployeeStats, formatNumber, ResearchName } from "/cl/corporationFormulas";
 import {
   getCorporationUpgradeLevels,
   getDivisionResearches,
   isProduct,
   Logger,
   sampleProductName
-} from "/corporationUtils";
-import { generateBlobUrl } from "/scriptUtils";
+} from "/cl/corporationUtils";
+import { generateBlobUrl } from "/cl/scriptUtils";
 let workerModuleUrl = new CorporationOptimizer().getScriptUrl();
 async function validateWorkerModuleUrl(ns) {
   let fetchResult;

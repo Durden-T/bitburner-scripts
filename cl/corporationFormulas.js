@@ -1,6 +1,6 @@
-import { CorpResearchesData } from "/data/CorpResearchesData";
-import { CorpUpgradesData } from "/data/CorpUpgradesData";
-import { Ceres } from "/libs/Ceres";
+import { CorpResearchesData } from "/cl/data/CorpResearchesData";
+import { CorpUpgradesData } from "/cl/data/CorpUpgradesData";
+import { Ceres } from "/cl/libs/Ceres";
 var CityName = /* @__PURE__ */ ((CityName2) => {
   CityName2["Aevum"] = "Aevum";
   CityName2["Chongqing"] = "Chongqing";

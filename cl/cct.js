@@ -1,4 +1,4 @@
-import { NetscriptExtension } from "/libs/NetscriptExtension";
+import { NetscriptExtension } from "/cl/libs/NetscriptExtension";
 function isPrimeNumberNotOptimized(input) {
   if (input === 2) {
     return true;

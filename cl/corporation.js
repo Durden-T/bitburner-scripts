@@ -1,7 +1,7 @@
 import {
   NetscriptExtension,
   parseAutoCompleteDataFromDefaultConfig
-} from "/libs/NetscriptExtension";
+} from "/cl/libs/NetscriptExtension";
 import {
   CityName,
   CorpState,
@@ -15,7 +15,7 @@ import {
   ResearchName,
   UnlockName,
   UpgradeName
-} from "/corporationFormulas";
+} from "/cl/corporationFormulas";
 import {
   assignJobs,
   buyAdvert,
@@ -50,8 +50,8 @@ import {
   waitForNextTimeStateHappens,
   waitUntilHavingEnoughResearchPoints,
   generateOfficeSetupsForEarlyRounds
-} from "/corporationUtils";
-import { optimizeOffice } from "/corporationOptimizerTools";
+} from "/cl/corporationUtils";
+import { optimizeOffice } from "/cl/corporationOptimizerTools";
 import {
   CorporationOptimizer,
   defaultPerformanceModifierForOfficeBenchmark,
@@ -62,10 +62,10 @@ import {
   precalculatedEmployeeRatioForProfitSetupOfRound3,
   precalculatedEmployeeRatioForProfitSetupOfRound4,
   precalculatedEmployeeRatioForSupportDivisions
-} from "/corporationOptimizer";
-import * as testingTools from "/corporationTestingTools";
-import { corporationEventLogger } from "/corporationEventLogger";
-import { exposeGameInternalObjects } from "/exploits";
+} from "/cl/corporationOptimizer";
+import * as testingTools from "/cl/corporationTestingTools";
+import { corporationEventLogger } from "/cl/corporationEventLogger";
+import { exposeGameInternalObjects } from "/cl/exploits";
 function autocomplete(data, flags) {
   return parseAutoCompleteDataFromDefaultConfig(data, defaultConfig);
 }

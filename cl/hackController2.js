@@ -1,8 +1,8 @@
-import { assertIsString } from "/libs/utils";
-import { GROW_SCRIPT_NAME, HACK_SCRIPT_NAME, LOG_FOLDER, WEAKEN_SCRIPT_NAME } from "/libs/constants";
-import { CompletedProgramName } from "/libs/Enums";
-import { parseNumber } from "/libs/utils";
-import { NetscriptExtension } from "/libs/NetscriptExtension";
+import { assertIsString } from "/cl/libs/utils";
+import { GROW_SCRIPT_NAME, HACK_SCRIPT_NAME, LOG_FOLDER, WEAKEN_SCRIPT_NAME } from "/cl/libs/constants";
+import { CompletedProgramName } from "/cl/libs/Enums";
+import { parseNumber } from "/cl/libs/utils";
+import { NetscriptExtension } from "/cl/libs/NetscriptExtension";
 function autocomplete(data, flags) {
   return [...data.servers];
 }

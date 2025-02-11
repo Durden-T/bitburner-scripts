@@ -1,6 +1,6 @@
-import { assertIsNumber } from "/libs/utils";
-import { SHARE_SCRIPT_NAME } from "/libs/constants";
-import { NetscriptExtension } from "/libs/NetscriptExtension";
+import { assertIsNumber } from "/cl/libs/utils";
+import { SHARE_SCRIPT_NAME } from "/cl/libs/constants";
+import { NetscriptExtension } from "/cl/libs/NetscriptExtension";
 let nsx;
 async function main(ns) {
   nsx = new NetscriptExtension(ns);

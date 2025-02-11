@@ -1,7 +1,7 @@
-import { cities } from "/corporationUtils";
-import { EmployeePosition, MaterialName, UpgradeName } from "/corporationFormulas";
-import { getRecordEntries } from "/libs/Record";
-import { CorpUpgradesData } from "/data/CorpUpgradesData";
+import { cities } from "/cl/corporationUtils";
+import { EmployeePosition, MaterialName, UpgradeName } from "/cl/corporationFormulas";
+import { getRecordEntries } from "/cl/libs/Record";
+import { CorpUpgradesData } from "/cl/data/CorpUpgradesData";
 import { CorpMaterialsData } from "./data/CorpMaterialsData";
 const indexDBObjectStore = "savestring";
 async function getObjectStore() {

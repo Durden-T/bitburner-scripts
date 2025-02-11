@@ -1,8 +1,8 @@
 import {
   NetscriptExtension,
   parseAutoCompleteDataFromDefaultConfig
-} from "/libs/NetscriptExtension";
-import { GROW_SCRIPT_NAME, HACK_SCRIPT_NAME, STOCK_HISTORY_LOGS_PREFIX, WEAKEN_SCRIPT_NAME } from "/libs/constants";
+} from "/cl/libs/NetscriptExtension";
+import { GROW_SCRIPT_NAME, HACK_SCRIPT_NAME, STOCK_HISTORY_LOGS_PREFIX, WEAKEN_SCRIPT_NAME } from "/cl/libs/constants";
 function autocomplete(data, flags) {
   return parseAutoCompleteDataFromDefaultConfig(data, defaultConfig);
 }

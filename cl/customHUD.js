@@ -1,10 +1,10 @@
-import { NetscriptExtension } from "/libs/NetscriptExtension";
-import { DAEMON_SCRIPT_NAME } from "/libs/constants";
-import { parseNumber } from "/libs/utils";
-import { UpgradeName } from "/corporationFormulas";
-import { clearPurchaseOrders, DivisionName, hasDivision } from "/corporationUtils";
-import * as testingTools from "/corporationTestingTools";
-import { exposeGameInternalObjects } from "/exploits";
+import { NetscriptExtension } from "/cl/libs/NetscriptExtension";
+import { DAEMON_SCRIPT_NAME } from "/cl/libs/constants";
+import { parseNumber } from "/cl/libs/utils";
+import { UpgradeName } from "/cl/corporationFormulas";
+import { clearPurchaseOrders, DivisionName, hasDivision } from "/cl/corporationUtils";
+import * as testingTools from "/cl/corporationTestingTools";
+import { exposeGameInternalObjects } from "/cl/exploits";
 let ns;
 let nsx;
 let doc;

@@ -1,6 +1,6 @@
-import { getRecordEntries, getRecordKeys } from "/libs/Record";
-import { parseNumber } from "/libs/utils";
-import { Ceres } from "/libs/Ceres";
+import { getRecordEntries, getRecordKeys } from "/cl/libs/Record";
+import { parseNumber } from "/cl/libs/utils";
+import { Ceres } from "/cl/libs/Ceres";
 import {
   CityName,
   CorpState,
@@ -18,8 +18,8 @@ import {
   ResearchName,
   UnlockName,
   UpgradeName
-} from "/corporationFormulas";
-import { CorpMaterialsData } from "/data/CorpMaterialsData";
+} from "/cl/corporationFormulas";
+import { CorpMaterialsData } from "/cl/data/CorpMaterialsData";
 var DivisionName = /* @__PURE__ */ ((DivisionName2) => {
   DivisionName2["AGRICULTURE"] = "Agriculture";
   DivisionName2["CHEMICAL"] = "Chemical";
