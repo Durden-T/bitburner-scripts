@@ -1,5 +1,5 @@
-import { NetscriptExtension } from "libs/NetscriptExtension";
-import { CompletedProgramName } from "libs/Enums";
+import { NetscriptExtension } from "/cl/libs/NetscriptExtension";
+import { CompletedProgramName } from "/cl/libs/Enums";
 let nsx;
 async function main(ns) {
   nsx = new NetscriptExtension(ns);
